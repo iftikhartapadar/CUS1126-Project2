@@ -1,0 +1,24 @@
+package jsjf.exceptions;
+/**
+ * CUS-1126
+ * Project 2 - Group 4
+ * @author Iftikhar Tapadar, Pierce Montgomery, George Britton
+ */
+
+/**
+ * Represents the situation in which a collection is empty.
+ *
+ * @author Java Foundations
+ * @version 4.0
+ */
+public class EmptyCollectionException extends RuntimeException
+{
+	/**
+	 * Sets up this exception with an appropriate message.
+	 * @param collection the name of the collection
+	 */
+	public EmptyCollectionException(String collection)
+	{
+		super("The " + collection + " is empty.");
+	}
+}
